@@ -1,0 +1,144 @@
+html {
+    background-color: rgb(83, 77, 126);
+}
+
+
+/*Rubriker*/
+h1 {
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 2px 0 #c7d2f3, -2px 0 #c7d2f3, 0 2px #c7d2f3, 0 -2px #c7d2f3, 1px 1px #c7d2f3, -1px -1px #c7d2f3, 1px -1px #c7d2f3, -1px 1px #c7d2f3;
+    font-size: 45px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/*Listor/knapparna*/
+ul {
+    display:flex;
+    justify-content: center;
+}
+
+
+li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 5px;
+    background-color: #2e424f;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+li:hover {
+    background-color: #2e73a0;
+}
+
+
+/*Bilder*/
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+
+}
+
+
+/*Länkar*/
+a {
+    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #c7d2f3;
+}
+
+a:hover {
+    color:#95a8e0;
+    text-decoration-color: #95a8e0;
+}
+
+
+/*Header och footer + main*/
+#head {
+    background-color: rgb(33, 33, 91);
+    display: block;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:110px;
+    z-index:-1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#foot {
+    background-color: rgb(33, 33, 91);
+    display: block;
+    position:absolute;
+    top:100;
+    left:0;
+    width:100%;
+    height:150px;
+    z-index:-1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+main {
+    background-color: rgb(228, 228, 228);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-radius: 10px;
+    border: 6px solid rgb(42, 5, 72);
+}
+
+
+/*Mindre id:n och figure caption*/
+#datum, #slogan, #creds {
+    text-align: center;
+}
+
+#slogan, #creds, a {
+    color: #c7d2f3;
+}
+
+
+#creds, a, #slogan {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+
+
+#creds {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+figcaption {
+    text-align: center;
+    color:rgb(104, 98, 110);
+}
+
+#navComic ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+}
+
+#navComic li {
+    flex-basis: calc(15% - 20px);
+}
+/*erftgh*/
