@@ -83,9 +83,10 @@ function appendComic(data){
     mainComic.appendChild(titel);
 
     //Datum
-    let date=document.createElement('p');
-    date.innerHTML=data.day + "." + data.month + "." + data.year;
-    date.id="datum";
+    const { year, month, day } = data; // Assuming data has year, month, and day properties
+    const date = document.createElement('p');
+    date.textContent = new Date(year, month - 1, day).toLocaleDateString('fi-FI');
+    date.id = 'datum';
     mainComic.appendChild(date);
 
     //Bild i en figure
